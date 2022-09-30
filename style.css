@@ -1,56 +1,37 @@
-a {
-    text-decoration: none;
-    
+body {
+    font-family: "Poppins", "Arial", "sans-serif";
 }
 
-.home, body {
+/* Fonts */
+
+/* Variables */
+:root {
+    --font-size: 1rem;
+}
+
+/* Reset */
+
+*{
+    box-sizing: border-box;
+    outline: none;
     margin: 0;
-    font-family: "Passions+Conflict", sans-serif;
-} 
-
-.btn-navigation {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    z-index: 20;
-    cursor: pointer;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
 }
 
-.btn-navigation .barre {
-    width: 30px;
-    height: 3px;
-    background-color: grey;
-    margin-top: 3px;
+/* Basic style */
+
+body {
+font-size: var(--font-size)
 }
 
-.navheader {
-   position: fixed;
-   right: 0; 
-   padding: 0 30px;
-   background: lightblue;
-   width: 20%;
-   height: 100%;
-   
-   transform: translateX(100%);
-   --webkit-transform: translateX(100%);
-}
+/* Navbar */
 
-.navheader ul {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    --webkit-transform: translateY(-50%);
-}
+/* small devices */
+    /* toggle menu */
 
-.navheader ul li {
-margin: 10px 0;
-list-style-type: none;
-}
+    /* bonus - animation */
 
-.navheader ul li a {
-color: white;
-text-transform: uppercase;
-font-size: 20px;
-letter-spacing: 0.5em;
-font-weight: 800;
-}
+/* medium devices */
