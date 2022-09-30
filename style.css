@@ -8,9 +8,16 @@ body {
 :root {
     --font-size: 1rem;
 }
+.light-mode {
+    --navbar-color: black;
+    --navbar-bg--color: grey;
+}
+.dark-mode {
+    --navbar-color: white;
+    --navbar-bg--color: black;
+}
 
 /* Reset */
-
 *{
     box-sizing: border-box;
     outline: none;
@@ -25,6 +32,9 @@ ul {
 
 body {
 font-size: var(--font-size)
+}
+.main-content {
+    padding: 1rem;
 }
 
 /* Navbar */
