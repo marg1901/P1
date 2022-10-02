@@ -1,47 +1,104 @@
-body {
-    font-family: "Poppins", "Arial", "sans-serif";
-}
-
-/* Fonts */
-
-/* Variables */
-:root {
-    --font-size: 1rem;
-}
-.light-mode {
-    --navbar-color: black;
-    --navbar-bg--color: grey;
-}
-.dark-mode {
-    --navbar-color: white;
-    --navbar-bg--color: black;
-}
-
-/* Reset */
-*{
-    box-sizing: border-box;
-    outline: none;
+* {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
-ul {
-    list-style-type: none;
-}
-
-/* Basic style */
 
 body {
-font-size: var(--font-size)
-}
-.main-content {
-    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar */
+header {
+    height: 100vh;
+    weight: 100vw;
+    background-image: url(Photos/fond.jpeg);
+    background-size: cover;
+}
 
-/* small devices */
-    /* toggle menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
 
-    /* bonus - animation */
+.navbar a {
+    color:white
+}
 
-/* medium devices */
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px; 
+}
+
+.navbar .nav-links ul li.active a {
+    color: blue;
+    font-weight: 600px;
+}
+.navbar .mburger {
+    display: none;
+    position: absolute;
+    width: 35px;
+    top: 50px;
+    right: 50px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 40px;
+        left: 250px;
+    }
+
+    .navbar .mburger {
+        display: block;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+    margin: 25px 0; 
+    font-size: 1em;
+    }
+
+}
