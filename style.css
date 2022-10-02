@@ -9,6 +9,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.fit-picture {
+    border-radius: 80px;
+}
+
 header {
     height: 100vh;
     weight: 100vw;
