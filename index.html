@@ -5,37 +5,70 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projet 1 WCS</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
   <header>
+    <img class="fit-picture" src="Photos/logo.jpg" alt="blason" width="150" />
     <nav class="navbar">
-      <img class="fit-picture" src="Photos/logo.jpg" alt="blason" width="150" />
-      <a href="#" class="logo">Le Géant Marin</a>
       <div class="nav-links">
+        <img src="Photos/close.png" alt="closemenu" class="close" />
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Grand Requin Blanc </a></li>
-          <li><a href="#">Requin Marteau</a></li>
-          <li><a href="#">Requin Mako</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/Grandrequinblanc.html">Grand Requin Blanc</a></li>
+          <li><a href="/requinmarteau.html">Requin Marteau</a></li>
+          <li><a href="/requinmako.html">Requin Mako</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>
       <img src="Photos/burger.png" alt="menuburger" class="mburger" />
     </nav>
   </header>
 
+  <section id="titre">
+    <h1>LE GEANT MARIN !</h1>
+  </section>
+
+  <section class="description">
+    <p>
+      Requin est un terme désormais ambigu désignant en français des poissons cartilagineux présents dans tous les
+      océans du globe.
+      Les premiers requins sont apparus au dévonien, il y a environ 430 Ma. À partir du crétacé, il y a 100 Ma, beaucoup
+      d'espèces de requins ont adopté leur forme moderne ; ils n'ont guère évolué depuis.
+    </p>
+  </section>
+
+  <section class="Requin1">
+    <h2>Le Grand Requin Blanc</h2>
+  </section>
+
+  <section class="Requin2">
+    <h2>Le Requin Marteau</h2>
+  </section>
+
+  <section class="Requin3">
+    <h2>Le Requin Mako</h2>
+  </section>
+
 
 </body>
 <script>
   const menuHamburger = document.querySelector(".mburger")
+  const closeMenu = document.querySelector(".close")
   const navLinks = document.querySelector(".nav-links")
 
   menuHamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('mobile-menu');
+    console.log("j'ouvre ma nav");
+    navLinks.classList.add('mobile-menu');
   });
+
+  closeMenu.addEventListener('click', () => {
+    console.log("je ferme ma nav");
+    navLinks.classList.remove('mobile-menu');
+  });
+
 </script>
 
 </html>
