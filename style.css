@@ -8,6 +8,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url(Photos/fond.jpeg);
+    backdrop-filter: blur(7px);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover;
@@ -124,6 +125,8 @@ h2 {
         display: block;
         top: 0;
         right: 70px;
+        width: 35px;
+        height: 35px;
     }
 
     header {
@@ -135,7 +138,6 @@ h2 {
         top: 0;
         right: 0;
         position: absolute;
-        backdrop-filter: blur(5px);
         width: 110%;
         height: 110vh;
         display: flex;
